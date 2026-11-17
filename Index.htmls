@@ -42,12 +42,12 @@
             background: none;
             border: none;
             color: #ffffff;
-            font-size: 18px;
+            font-size: 14px;
             cursor: pointer;
         }
 
         .logo {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 800;
             letter-spacing: 1px;
             background: linear-gradient(90deg, #00f2fe, #4facfe);
@@ -61,15 +61,15 @@
 
         .header-actions {
             display: flex;
-            gap: 10px;
+            gap: 8px;
         }
 
         .icon-btn {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
+            width: 34px;
+            height: 34px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -141,7 +141,7 @@
             cursor: pointer;
         }
 
-        /* Content Area (Secret Society Card example) */
+        /* Grid Content Area */
         .card-container {
             flex: 1;
             display: grid;
@@ -175,7 +175,7 @@
         }
 
         .card-title {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
             color: #a0aec0;
             margin-bottom: 12px;
@@ -183,12 +183,9 @@
             text-align: center;
         }
 
-        .card-image {
-            width: 90px;
-            height: 70px;
-            object-fit: contain;
+        .card-emoji {
+            font-size: 40px;
             margin-bottom: 15px;
-            filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
         }
 
         .price-btn {
@@ -249,7 +246,7 @@
 <body>
 
     <div class="container">
-        <!-- Yuqori qism (Header) -->
+        <!-- Header -->
         <div>
             <div class="header">
                 <button class="close-btn">✕ Закрыть</button>
@@ -260,7 +257,7 @@
                 </div>
             </div>
 
-            <!-- Profil va Balans -->
+            <!-- Profile & Balance -->
             <div class="profile-bar">
                 <div class="user-info">
                     <div class="avatar">N</div>
@@ -273,27 +270,24 @@
             </div>
         </div>
 
-        <!-- O'rtadagi kartochkalar (Keyslar) -->
+        <!-- Cards Area -->
         <div class="card-container">
-            <!-- 1-kartochka -->
             <div class="game-card">
                 <div class="card-tag"></div>
                 <div class="card-title">SECRET SOCIETY</div>
-                <!-- Bu yerga o'zingizning rasm havolangizni qo'yasiz -->
-                <div style="font-size: 40px; margin-bottom: 15px;">🔮</div>
+                <div class="card-emoji">🔮</div>
                 <button class="price-btn">20 💎</button>
             </div>
 
-            <!-- 2-kartochka -->
             <div class="game-card">
                 <div class="card-tag" style="background: #4facfe; box-shadow: 0 0 8px #4facfe;"></div>
                 <div class="card-title">WHALE CLUB</div>
-                <div style="font-size: 40px; margin-bottom: 15px;">🏛️</div>
+                <div class="card-emoji">🏛️</div>
                 <button class="price-btn">200 💎</button>
             </div>
         </div>
 
-        <!-- Pastki menyu (Navigation) -->
+        <!-- Bottom Navigation -->
         <div class="nav-bar">
             <button class="nav-item">
                 <span class="nav-icon">📦</span>
